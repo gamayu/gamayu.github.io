@@ -9,11 +9,11 @@
 
     <title>Carrot Search FoamTree, API reference</title>
 
-    <link href="../demos/assets/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="../demos/assets/css/bootstrap-theme.min.css" rel="stylesheet"/>
-    <link href="../demos/assets/css/docs.css" rel="stylesheet"/>
-    <link href="../demos/assets/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="../demos/assets/css/github.css" rel="stylesheet"/>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../assets/css/bootstrap-theme.min.css" rel="stylesheet"/>
+    <link href="../assets/css/docs.css" rel="stylesheet"/>
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="../assets/css/github.css" rel="stylesheet"/>
   </head>
 
   <body data-spy="scroll" data-target=".bs-sidebar">
@@ -183,7 +183,7 @@ var foamtree = new CarrotSearchFoamTree({
               <ul>
                 <li><code>api/</code>: FoamTree API reference.</li>
                 <li>
-                  <code>demos/</code>: a number of complete <a href="../demos/index.html">demo applications</a>
+                  <code>demos/</code>: a number of complete <a href="../index.html">demo applications</a>
                   illustrating
                   specific aspects of FoamTree.
                 </li>
@@ -286,7 +286,7 @@ var foamtree = new CarrotSearchFoamTree({
                 </dd>
               </dl>
 
-              <img src="../demos/assets/img/foamtree-group-states.jpg" class="img-rounded img-responsive"
+              <img src="../assets/img/foamtree-group-states.jpg" class="img-rounded img-responsive"
                    style="margin-bottom: 20px"/>
 
 
@@ -323,7 +323,7 @@ var foamtree = new CarrotSearchFoamTree({
                 </dd>
               </dl>
 
-              <img src="../demos/assets/img/foamtree-group-shapes.jpg" class="img-rounded img-responsive"/>
+              <img src="../assets/img/foamtree-group-shapes.jpg" class="img-rounded img-responsive"/>
             </section>
 
             <section id="interaction">
@@ -1066,7 +1066,7 @@ foamtree.set("dataObject", null);
 
 // Load Carrot2 JSON clusters.
 $.ajax({
-  url: "../demos/assets/data/carrot2/ben-and-jerry.json",
+  url: "../assets/data/carrot2/ben-and-jerry.json",
   dataType: "json",
   success: function(data) {
     foamtree.set({
@@ -1103,7 +1103,7 @@ foamtree.set("dataObject", null);
 // Load Carrot2 JSON clusters.
 
 $.ajax({
-  url: "../demos/assets/data/carrot2/ben-and-jerry.xml",
+  url: "../assets/data/carrot2/ben-and-jerry.xml",
   dataType: "xml",
   success: function(data) {
     foamtree.set({
@@ -1315,8 +1315,8 @@ $.ajax({
               <p>
                 If needed, you can draw custom content in each FoamTree polygon. Please see
                 the <code>groupContentDecorator</code> option for details and examples. Additionally,
-                the <a href="../demos/images.html" target="_blank">images demo</a> shows how to render
-                SVG images inside FoamTree polygons and the <a href="../demos/github.html" target="_blank">GitHub
+                the <a href="../images.html" target="_blank">images demo</a> shows how to render
+                SVG images inside FoamTree polygons and the <a href="../github.html" target="_blank">GitHub
                 search demo</a> demonstrates some more advanced custom content layout and rendering.
               </p>
             </section>
@@ -1344,10 +1344,10 @@ $.ajax({
 
               <p>
                 Since version <span class="label label-default">3.2.0</span>, FoamTree should be able to <a
-                  target="_blank" href="../demos/large.html">visualize
+                  target="_blank" href="../large.html">visualize
                 hierarchies of 100k+ groups with 100+ levels</a> on recent hardware. As of version
                 <span class="label label-default">3.3.0</span>, FoamTree can also generate
-                <a href="../demos/rectangular.html" target="_blank">traditional rectangular</a>
+                <a href="../rectangular.html" target="_blank">traditional rectangular</a>
                 treemaps which are significantly faster to compute than the default polygon-based layout.
                 The following subsections discuss the performance and visual aspects involved.
               </p>
@@ -1766,7 +1766,7 @@ foamtree.set({
               <p>
                 With FoamTree 3.2.0 and later it is possible to defer the loading of data for lower levels
                 of the hierarchy until the user opens the corresponding parent group. The <a
-                  href="../demos/lazy-loading.html" target="_blank">lazy loading code example</a> demonstrates this
+                  href="../lazy-loading.html" target="_blank">lazy loading code example</a> demonstrates this
                 approach.
                 Please note that currently lazy-loading of child groups is not possible when <code>stacking</code> mode
                 is set to <code>flattened</code>.
@@ -1875,7 +1875,7 @@ foamtree.set({
                 as <a href="http://eightmedia.github.io/hammer.js/">Hammer.js</a> or
                 <a href="https://github.com/mudcube/Event.js">Event.js</a> and trigger
                 the appropriate FoamTree actions using the <code>trigger</code> method.
-                Please see the <a href="../demos/external-interaction.html">external-interaction.html</a>
+                Please see the <a href="../external-interaction.html">external-interaction.html</a>
                 demo for a complete example.
               </p>
             </section>
@@ -1900,7 +1900,7 @@ foamtree.set({
                 diagram can take a while for larger data sets. You can use the
                 <code>carrotsearch.foamtree.util.loading.js</code> utility to show a simple
                 <em>Loading...</em> message to the user. Please see the source code of the
-                <a href="../demos/loading.html" target="_blank">loading.html</a> example page for
+                <a href="../loading.html" target="_blank">loading.html</a> example page for
                 usage information.
               </p>
             </section>
@@ -1914,7 +1914,7 @@ foamtree.set({
                 utility. It will show contextual suggestions on
                 how to browse the data (only on desktop browser) and also a guide to all
                 possible interactions and keyboard bindings. Please see the source code of the
-                <a href="../demos/hints.html" target="_blank">hints.html</a> example page for
+                <a href="../hints.html" target="_blank">hints.html</a> example page for
                 usage information.
               </p>
             </section>
@@ -1927,7 +1927,7 @@ foamtree.set({
                 <code>relaxationVisible</code> option, you can use the
                 <code>carrotsearch.foamtree.util.relaxationprogress.js</code> utility to
                 show the progress of the process. Please see the source code of the
-                <a href="../demos/relaxation-progress.html" target="_blank">relaxation-progress.html</a>
+                <a href="../relaxation-progress.html" target="_blank">relaxation-progress.html</a>
                 example page for usage information.
               </p>
             </section>
@@ -2119,7 +2119,7 @@ var timeout = window.setTimeout(function() {
                 <dd>
                   coordinates of the point over which the event was triggered. The coordinates
                   are <strong>relative to the visualization container element</strong>. Use those coordinates to, for
-                  example, <a target="_blank" href="../demos/contextmenu.html">show a popup dialog near the mouse
+                  example, <a target="_blank" href="../contextmenu.html">show a popup dialog near the mouse
                   pointer</a>.
                 </dd>
 
@@ -2129,7 +2129,7 @@ var timeout = window.setTimeout(function() {
                   coordinates of the point over which the event was triggered, relative to the visualization area. These
                   coordinates are in the same space as the one used to draw content in the
                   <code>groupContentDecorator</code> and are independent of zoom, pan and expose transformations. You
-                  can use these coordinates to <a target="_blank" href="../demos/interactive-custom-content.html">make
+                  can use these coordinates to <a target="_blank" href="../interactive-custom-content.html">make
                   custom content
                   interactive</a>.
                 </dd>
@@ -2195,7 +2195,7 @@ var timeout = window.setTimeout(function() {
                   mouse wheel and touch events to make it possible to use them
                   for visualization interactions. You can restore the default browser's
                   actions by calling this method as shown in the
-                  <a href="../demos/scrolling.html">scrollable content example</a>.
+                  <a href="../scrolling.html">scrollable content example</a>.
                 </dd>
               </dl>
 
@@ -3313,7 +3313,7 @@ console.log(foamtree.get("hierarchy", "1"));</pre>
                 <dl class="dl-horizontal">
                   <dt>relaxed</dt>
                   <dd>
-                    <img src="../demos/assets/img/foamtree-relaxed-layout.png" class="right floated"/>
+                    <img src="../assets/img/foamtree-relaxed-layout.png" class="right floated"/>
                     produces polygonal organic-looking arrangements based on Voronoi diagrams. This type of layout
                     tends to visualize groups as near-round polygons leaving plenty of space for the
                     group's label and content. A potential downside of this layout is that it may not very
@@ -3324,7 +3324,7 @@ console.log(foamtree.get("hierarchy", "1"));</pre>
 
                   <dt>ordered</dt>
                   <dd>
-                    <img src="../demos/assets/img/foamtree-ordered-layout.png" class="right floated"/>
+                    <img src="../assets/img/foamtree-ordered-layout.png" class="right floated"/>
                     produces the traditional rectangular treemap using the <em>strip</em> algorithm. The advantage of
                     this layout is that, if <code>layoutByWeightOrder</code> is <code>false</code>, it will arrange
                     groups in the left-to-right top-to-bottom fashion according to the order they were provided in the
@@ -3336,7 +3336,7 @@ console.log(foamtree.get("hierarchy", "1"));</pre>
 
                   <dt>squarified</dt>
                   <dd>
-                    <img src="../demos/assets/img/foamtree-squarified-layout.png" class="right floated"/>
+                    <img src="../assets/img/foamtree-squarified-layout.png" class="right floated"/>
                     produces the traditional treemap using the <em>squarified</em> algorithm. This layout arranges
                     groups along the diagonal of the container. Aspect ratios of the rectangles produced by this
                     method tend to be lower than the ones from the <code>ordered</code> layout. The squarified
@@ -3453,7 +3453,7 @@ console.log(foamtree.get("hierarchy", "1"));</pre>
                   <dt>hierarchical</dt>
                   <dd>
                     <p>
-                      <img src="../demos/assets/img/foamtree-hierarchical-stacking.png"
+                      <img src="../assets/img/foamtree-hierarchical-stacking.png"
                            style="float: right; margin-left: 10px; margin-bottom: 20px"/>
                       produces a layered view of the hierarchy. To be able to interact with lower-level groups, the user
                       will need to <a href="#interaction-open">open the parent group for browsing</a>.
@@ -3466,7 +3466,7 @@ console.log(foamtree.get("hierarchy", "1"));</pre>
                     </p>
 
                     <p>
-                      See the <a href="../demos/large.html" target="_blank">large hierarchy demo</a> for an application
+                      See the <a href="../large.html" target="_blank">large hierarchy demo</a> for an application
                       of the
                       hierarchical stacking mode.
                     </p>
@@ -3475,7 +3475,7 @@ console.log(foamtree.get("hierarchy", "1"));</pre>
                   <dt>flattened</dt>
                   <dd>
                     <p>
-                      <img src="../demos/assets/img/foamtree-flattened-stacking.png"
+                      <img src="../assets/img/foamtree-flattened-stacking.png"
                            style="float: right; margin-left: 10px"/>
                       produces a flattened view of the hierarchy. Groups of all levels are immediately available
                       for interaction. This kind of stacking will work especially well with a rectangular
@@ -3490,9 +3490,9 @@ console.log(foamtree.get("hierarchy", "1"));</pre>
                     </p>
 
                     <p>
-                      See the <a href="../demos/ft500.html" target="_blank">FT500 explorer</a>, <a
-                        href="../demos/scada.html" target="_blank">SCADA dashboard</a> or the <a
-                        href="../demos/coverage.html" target="_blank">Unit test coverage</a> demo for an applications of
+                      See the <a href="../ft500.html" target="_blank">FT500 explorer</a>, <a
+                        href="../scada.html" target="_blank">SCADA dashboard</a> or the <a
+                        href="../coverage.html" target="_blank">Unit test coverage</a> demo for an applications of
                       the flattened stacking mode.
                     </p>
 
@@ -3807,7 +3807,7 @@ var timeout = setTimeout(function() {
                       vertex, it contains the neighbor that shares the edge starting at the vertex and going clockwise.
                       Please note that that some slots in the neighbor array may be <code>null</code>, which means
                       the corresponding edge is the boundary of the visualization area. For a potential
-                      use case of this property, see the <a target="_blank" href="../demos/background.html">Background
+                      use case of this property, see the <a target="_blank" href="../background.html">Background
                       demo</a>.
                     </p>
 
@@ -3836,7 +3836,7 @@ console.log(foamtree.get("geometry", "1"));</pre>
 console.log(foamtree.get("geometry", "1", true));</pre>
 
                 <p>
-                  Please see the <a href="../demos/accuracy.html" target="_blank">accuracy.html</a> demo for an advanced
+                  Please see the <a href="../accuracy.html" target="_blank">accuracy.html</a> demo for an advanced
                   code example
                   that uses the geometry information to compute the accuracy with which polygon's areas correspond
                   to the group's weights.
@@ -3893,7 +3893,7 @@ console.log(foamtree.get("containerCoordinates", "1",
                 </p>
 
                 <p>
-                  Please see the <a href="../demos/sticky-tooltips.html" target="_blank">sticky-tooltips.html</a> demo
+                  Please see the <a href="../sticky-tooltips.html" target="_blank">sticky-tooltips.html</a> demo
                   for a real-world usage of this property.
                 </p>
               </section>
@@ -6542,7 +6542,7 @@ foamtree.set({
                 <p>
                   The following example shows how to use the title bar decorator to display more details
                   about the group. A similar complete example can be found in
-                  <a href="../demos/titlebar-details.html" target="_blank">titlebar-details.html</a>.
+                  <a href="../titlebar-details.html" target="_blank">titlebar-details.html</a>.
                 </p>
 
                 <pre class="partial executable example">
@@ -6628,7 +6628,7 @@ foamtree.set({
                 <p>
                   Since version <span class="label label-default">3.3.1</span>, this option
                   also accepts the <code><a href="https://developer.mozilla.org/en/docs/Web/API/HTMLImageElement.Image">Image</a></code>
-                  instances. With this enhancement, you can <a href="../demos/attribution.html" target="_blank">render
+                  instances. With this enhancement, you can <a href="../attribution.html" target="_blank">render
                   an SVG
                   attribution logo</a> that will look well regardless of the zoom level.
                 </p>
@@ -6645,7 +6645,7 @@ foamtree.set({
 
                 <pre class="partial executable example requiresFullVersion">
 var logoImage = new Image();
-logoImage.src = "../demos/assets/img/logo-stub.png";
+logoImage.src = "../assets/img/logo-stub.png";
 logoImage.addEventListener("load", function() {
   // Trigger a reload to show the logo
   foamtree.set("attributionLogo", logoImage.src);
@@ -6874,7 +6874,7 @@ foamtree.redraw();</pre>
                     When setting <code>pixelRatio</code> to a value larger
                     than 1 on mobile devices, make sure to correctly set the size of the
                     page's viewport. The default viewport may be very large, leading to a
-                    very large canvas. Refer to the <a href="../demos/touch.html">mobile demo's</a> source code
+                    very large canvas. Refer to the <a href="../touch.html">mobile demo's</a> source code
                     for examples.
                   </p>
                 </div>
@@ -7041,7 +7041,7 @@ foamtree.redraw();</pre>
                         Use cases of this buffer range from drawing custom fill or stroke around the group polygon
                         to filling the polygon with a pattern or an image. In tandem with the <code>labelContext</code>
                         property, you can use it to alter the default order of drawing group elements. See the
-                        <a href="../demos/flickr.html">Photo explorer</a> or the <a href="../demos/scada.html">SCADA
+                        <a href="../flickr.html">Photo explorer</a> or the <a href="../scada.html">SCADA
                         dashboard</a> demos for real-world applications.
                       </p>
 
@@ -7170,7 +7170,7 @@ foamtree.set({
                       along with the <a href="#event-details.absolute-coordinates">visualization-relative
                       coordinates</a>.
                       These coordinates correspond to the ones you'll use to draw the custom content. See the
-                      <a target="_blank" href="../demos/interactive-custom-content.html">Interactive custom content</a>
+                      <a target="_blank" href="../interactive-custom-content.html">Interactive custom content</a>
                       demo for some
                       example code.
                     </li>
@@ -7383,8 +7383,8 @@ foamtree.set({
 
 
                   <p>
-                    See also the <a href="../demos/images.html" target="_blank">images demo</a> for code that renders
-                    SVG images inside FoamTree polygons and the <a href="../demos/github.html" target="_blank">GitHub
+                    See also the <a href="../images.html" target="_blank">images demo</a> for code that renders
+                    SVG images inside FoamTree polygons and the <a href="../github.html" target="_blank">GitHub
                     search demo</a> for more complex custom content rendering.
                   </p>
                 </section>
@@ -9046,7 +9046,7 @@ foamtree.set({
                 <p>
                   You can use this event in combination with <code>groupContentDecorator</code> to make the custom-drawn
                   elements of each group interactive. See the <a target="_blank"
-                                                                 href="../demos/interactive-custom-content.html">Interactive
+                                                                 href="../interactive-custom-content.html">Interactive
                   custom content</a> demo for some example implementation.
                 </p>
               </section>
@@ -9644,7 +9644,7 @@ foamtree.set({
 
                   <dt>&lt;return value&gt;</dt>
                   <dd>
-                    <img src="../demos/assets/img/polygon-stabbing.jpg"
+                    <img src="../assets/img/polygon-stabbing.jpg"
                          style="float: right; max-width: 50%; min-width: 30%"/>
 
                     <p>
@@ -10206,7 +10206,7 @@ foamtree.set({
                       layout in such cases would be to create one or more drawing context buffers per group, fill
                       the buffers only when the <code>shapeDirty</code> property of the decorator is <code>true</code>
                       and when <code>shapeDirty</code> is <code>false</code>, replay the previously buffered drawing
-                      commands. Please see the <a target="_blank" href="../demos/github.html">GitHub search example</a>
+                      commands. Please see the <a target="_blank" href="../github.html">GitHub search example</a>
                       for this
                       pattern applied in practice.
                     </p>
@@ -10258,12 +10258,12 @@ foamtree.set({
 
                     <p>
                       You can use the new event and visualization-relative coordinates to
-                      <a target="_blank" href="../demos/interactive-custom-content.html">make the custom group content
+                      <a target="_blank" href="../interactive-custom-content.html">make the custom group content
                         interactive</a>.
                     </p>
 
-                    <a target="_blank" href="../demos/interactive-custom-content.html">
-                      <img src="../demos/assets/img/3.4.4-interactive-custom-content.jpg"
+                    <a target="_blank" href="../interactive-custom-content.html">
+                      <img src="../assets/img/3.4.4-interactive-custom-content.jpg"
                            class="img-rounded img-responsive"
                            style="margin: 20px 0" alt="FoamTree: interactive custom content demo"/>
                     </a>
@@ -10274,7 +10274,7 @@ foamtree.set({
                     <p>
                       You can use the <code>containerCoordinates</code> option to retrieve HTML container-relative
                       coordinates of a specific point inside FoamTree visualization. You can use this option to
-                      implement, for example, <a target="_blank" href="../demos/sticky-tooltips.html">sticky tooltips</a> that
+                      implement, for example, <a target="_blank" href="../sticky-tooltips.html">sticky tooltips</a> that
                       always point at a specific point in the visualization, regardless of zoom, pan or expose
                       transformations.
                     </p>
@@ -10441,7 +10441,7 @@ foamtree.set({
                   <dd>
                     <p>
                       Release 3.4.1 adds a demo with a simple utility for
-                      <a target="_blank" href="../demos/label-editing.html">interactive label editing</a>.
+                      <a target="_blank" href="../label-editing.html">interactive label editing</a>.
                     </p>
                   </dd>
                 </dl>
@@ -10505,16 +10505,16 @@ foamtree.set({
                     right
                     in the screen shot, the "flattened" view shows all levels of the hierarchy at once.
 
-                    <a target="_blank" href="../demos/coverage.html">
-                      <img src="../demos/assets/img/flattened-vs-hierarchical-stacking.jpg"
+                    <a target="_blank" href="../coverage.html">
+                      <img src="../assets/img/flattened-vs-hierarchical-stacking.jpg"
                            class="img-rounded img-responsive"
                            style="margin: 20px 0" alt="Flattened view of a Voronoi treemap in FoamTree"/>
                     </a>
 
                     For more details, please see the <code>stacking</code> option documentation
-                    section and the <a target="_blank" href="../demos/coverage.html">Unit test coverage</a>,
-                    <a target="_blank" href="../demos/ft500.html">FT500 explorer</a> and
-                    <a target="_blank" href="../demos/scada.html">SCADA dashboard</a> demos.
+                    section and the <a target="_blank" href="../coverage.html">Unit test coverage</a>,
+                    <a target="_blank" href="../ft500.html">FT500 explorer</a> and
+                    <a target="_blank" href="../scada.html">SCADA dashboard</a> demos.
                   </dd>
                 </dl>
               </section>
@@ -10525,8 +10525,8 @@ foamtree.set({
                 <dl class="dl-horizontal wide">
                   <dt>FT500 explorer</dt>
                   <dd>
-                    <a target="_blank" href="../demos/ft500.html">
-                      <img src="../demos/assets/img/3.4.0-demo-ft500.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../ft500.html">
+                      <img src="../assets/img/3.4.0-demo-ft500.jpg" class="img-rounded img-responsive"
                            style="border: 1px solid rgba(0, 0, 0, 0.1)"
                            alt="Financial Times 500 companies in FoamTree treemap"/>
                     </a>
@@ -10540,8 +10540,8 @@ foamtree.set({
 
                   <dt>Photo explorer</dt>
                   <dd>
-                    <a target="_blank" href="../demos/flickr.html">
-                      <img src="../demos/assets/img/3.4.0-demo-photo-explorer.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../flickr.html">
+                      <img src="../assets/img/3.4.0-demo-photo-explorer.jpg" class="img-rounded img-responsive"
                            alt="Flickr photo viewer based on the FoamTree treemap visualization library"/>
                     </a>
 
@@ -10555,8 +10555,8 @@ foamtree.set({
 
                   <dt>SCADA sensor dashboard</dt>
                   <dd>
-                    <a target="_blank" href="../demos/scada.html">
-                      <img src="../demos/assets/img/3.4.0-demo-scada.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../scada.html">
+                      <img src="../assets/img/3.4.0-demo-scada.jpg" class="img-rounded img-responsive"
                            alt="SCADA sensor readouts dashboard implemented using the FoamTree treemap visualization library"/>
                     </a>
 
@@ -10569,8 +10569,8 @@ foamtree.set({
 
                   <dt>Fancy background<br/>generator</dt>
                   <dd>
-                    <a target="_blank" href="../demos/background.html">
-                      <img src="../demos/assets/img/3.4.0-demo-background.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../background.html">
+                      <img src="../assets/img/3.4.0-demo-background.jpg" class="img-rounded img-responsive"
                            alt="SCADA sensor readouts dashboard implemented using the FoamTree treemap visualization library"/>
                     </a>
 
@@ -10583,7 +10583,7 @@ foamtree.set({
                   <dt>Context menu demo</dt>
                   <dd>
                     <p>
-                      The <a target="_blank" href="../demos/contextmenu.html">context menu demo</a> shows how to
+                      The <a target="_blank" href="../contextmenu.html">context menu demo</a> shows how to
                       implement group-specific context menus in FoamTree.
                     </p>
                   </dd>
@@ -10613,16 +10613,16 @@ foamtree.set({
                   <dd>
                     As of version 3.4.0, you can take complete control of how the group's polygon is drawn using the
                     <code><a href="#groupContentDecorator.properties.polygonContext">polygonContext</a></code> property
-                    of <code>groupContentDecorator</code>. See the <a target="_blank" href="../demos/flickr.html">Photo
+                    of <code>groupContentDecorator</code>. See the <a target="_blank" href="../flickr.html">Photo
                     explorer</a>
-                    and <a target="_blank" href="../demos/scada.html">SCADA dashboard</a> demos for real-world
+                    and <a target="_blank" href="../scada.html">SCADA dashboard</a> demos for real-world
                     applications of this property.
                   </dd>
 
                   <dt>Getting group's neighbors</dt>
                   <dd>
                     You can now retrieve the neighbors of a group as part of the <code>geometry</code> information;
-                    the <a target="_blank" href="../demos/background.html">Background</a> demo shows an example usage.
+                    the <a target="_blank" href="../background.html">Background</a> demo shows an example usage.
                   </dd>
 
                   <dt>Attribution color theme</dt>
@@ -10701,7 +10701,7 @@ foamtree.set({
 
               <p style="margin-top: 20px">
                 The 3.3.2 release fixes a number of minor issues found in version 3.3.1 and adds the
-                <a target="_blank" href="../demos/legacy-1.0.x.html">1.0.x legacy version</a> emulation demo.
+                <a target="_blank" href="../legacy-1.0.x.html">1.0.x legacy version</a> emulation demo.
               </p>
 
               <p>
@@ -10762,7 +10762,7 @@ foamtree.set({
                   <dt>FoamTree 1.0.x emulation</dt>
                   <dd>
                     <p>
-                      Release 3.3.2 adds demo with <a target="_blank" href="../demos/legacy-1.0.x.html">emulation of
+                      Release 3.3.2 adds demo with <a target="_blank" href="../legacy-1.0.x.html">emulation of
                       the Flash-based 1.0.x line of FoamTree</a> look and feel.
                     </p>
                   </dd>
@@ -10808,7 +10808,7 @@ foamtree.set({
                       Since version 3.3.1, the <code>attributionLogo</code> option also accepts the
                       <code><a
                           href="https://developer.mozilla.org/en/docs/Web/API/HTMLImageElement.Image">Image</a></code>
-                      instances. With this enhancement, you can <a href="../demos/attribution.html" target="_blank">render
+                      instances. With this enhancement, you can <a href="../attribution.html" target="_blank">render
                       an SVG
                       attribution logo</a> that will look well regardless of the zoom level.
                     </p>
@@ -10865,8 +10865,8 @@ foamtree.set({
                     As of version 3.3.0 FoamTree can generate the traditional rectangular tree maps in addition
                     to the default polygonal layouts.
 
-                    <a target="_blank" href="../demos/rectangular.html">
-                      <img src="../demos/assets/img/rectangular-layouts.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../rectangular.html">
+                      <img src="../assets/img/rectangular-layouts.jpg" class="img-rounded img-responsive"
                            style="margin: 20px 0" alt="Traditional rectangular treemap in FoamTree"/>
                     </a>
 
@@ -10886,7 +10886,7 @@ foamtree.set({
                       To generate the ordered polygonal layout, set the <code>relaxationInitializer</code> to
                       <code>ordered</code>; to generate the ordered rectangular layout, set <code>layout</code> to
                       <code>ordered</code>. In both cases, set <code>layoutByWeightOrder</code> to <code>false</code>.
-                      Please see the <a href="../demos/rectangular.html" target="_blank">ordered layouts demo</a> source
+                      Please see the <a href="../rectangular.html" target="_blank">ordered layouts demo</a> source
                       code for a complete example.
                     </p>
                   </dd>
@@ -11051,7 +11051,7 @@ foamtree.set({
                 <dl class="dl-horizontal wide">
                   <dt>HTML tooltips example</dt>
                   <dd>
-                    Version 3.2.2 comes with an <a href="../demos/tooltips.html" target="_blank">example of displaying
+                    Version 3.2.2 comes with an <a href="../tooltips.html" target="_blank">example of displaying
                     rich HTML-based tooltips</a> for each group.
                   </dd>
                 </dl>
@@ -11114,7 +11114,7 @@ foamtree.set({
                 <dl class="dl-horizontal wide">
                   <dt>Lazy loading of data</dt>
                   <dd>
-                    Example code of <a href="../demos/lazy-loading.html" target="_blank">lazy-loading of visualization
+                    Example code of <a href="../lazy-loading.html" target="_blank">lazy-loading of visualization
                     data</a> has been added.
                   </dd>
                 </dl>
@@ -11199,8 +11199,8 @@ foamtree.set({
                     to browse hierarchies consisting of many thousands of nodes without noticeable performance
                     degradation.
 
-                    <a target="_blank" href="../demos/large.html">
-                      <img src="../demos/assets/img/large-data-sets.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../large.html">
+                      <img src="../assets/img/large-data-sets.jpg" class="img-rounded img-responsive"
                            style="margin: 20px 0" alt="FoamTree visualizing the Tree of Life"/>
                     </a>
 
@@ -11274,12 +11274,12 @@ foamtree.set({
                   <dd>
                     Since version 3.1.0, the <code>groupContentDecorator</code> option makes it possible to
                     draw arbitrary content in each FoamTree polygon. Please see the examples in the documentation
-                    as well as the <a target="_blank" href="../demos/images.html">SVG images</a> and
-                    <a target="_blank" href="../demos/github.html">GitHub search</a> for example decorations that can
+                    as well as the <a target="_blank" href="../images.html">SVG images</a> and
+                    <a target="_blank" href="../github.html">GitHub search</a> for example decorations that can
                     be drawn.
 
-                    <a target="_blank" href="../demos/github.html">
-                      <img src="../demos/assets/img/github-search.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../github.html">
+                      <img src="../assets/img/github-search.jpg" class="img-rounded img-responsive"
                            style="margin: 20px" alt="FoamTree GitHub search demo"/>
                     </a>
                   </dd>
@@ -11293,12 +11293,12 @@ foamtree.set({
 
                   <dt>Data generator<br/>in settings panel</dt>
                   <dd>
-                    The <a target="_blank" href="../demos/settings.html">settings panel</a> now comes with a data
+                    The <a target="_blank" href="../settings.html">settings panel</a> now comes with a data
                     generator
                     that you can use to test your settings with data sets of different characteristics.
 
-                    <a target="_blank" href="../demos/settings.html">
-                      <img src="../demos/assets/img/data-generator.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../settings.html">
+                      <img src="../assets/img/data-generator.jpg" class="img-rounded img-responsive"
                            style="margin: 20px" alt="FoamTree data generator dialog"/>
                     </a>
                   </dd>
@@ -11306,14 +11306,14 @@ foamtree.set({
                   <dt>New demos</dt>
                   <dd>
                     Version 3.1.0 come with four new demos:
-                    <a target="_blank" href="../demos/github.html">GitHub search</a>,
-                    <a target="_blank" href="../demos/csv.html">CSV to FoamTree</a>,
-                    <a target="_blank" href="../demos/coverage.html">Code coverage visualization</a> and
-                    <a target="_blank" href="../demos/images.html">Images in polygons</a>.
+                    <a target="_blank" href="../github.html">GitHub search</a>,
+                    <a target="_blank" href="../csv.html">CSV to FoamTree</a>,
+                    <a target="_blank" href="../coverage.html">Code coverage visualization</a> and
+                    <a target="_blank" href="../images.html">Images in polygons</a>.
                     All of the demos make advanced use of the new and existing FoamTree APIs.
 
-                    <a target="_blank" href="../demos/index.html">
-                      <img src="../demos/assets/img/3.1.0-new-demos.jpg" class="img-rounded img-responsive"
+                    <a target="_blank" href="../index.html">
+                      <img src="../assets/img/3.1.0-new-demos.jpg" class="img-rounded img-responsive"
                            style="margin: 20px" alt="New demos in FoamTree 3.1.0"/>
                     </a>
                   </dd>
@@ -11419,7 +11419,7 @@ foamtree.set({
                     in Chrome, Safari and Firefox. The image below shows small-font label rendered
                     in Chrome by FoamTree 3.0.2 (left) and FoamTree 3.0.3 (right).
 
-                    <img src="../demos/assets/img/foamtree-219.png" class="img-rounded img-responsive"
+                    <img src="../assets/img/foamtree-219.png" class="img-rounded img-responsive"
                          style="margin: 20px" alt="Improved small-font label rendering in FoamTree 3.0.3"/>
                   </dd>
                 </dl>
@@ -11431,7 +11431,7 @@ foamtree.set({
                     such as mouse wheel movement. To allow the default browser event action, call the
                     <a href="#allowOriginalEventDefault">allowOriginalEventDefault()</a> method on the
                     appropriate <a href="#events-interaction">interaction event</a> details object. The
-                    <a href="../demos/scrolling.html">scrollable content example</a> shows how to use
+                    <a href="../scrolling.html">scrollable content example</a> shows how to use
                     this technique to allow page content scrolling when mouse wheel is moved over FoamTree
                     element.
                   </dd>
@@ -11457,7 +11457,7 @@ foamtree.set({
 
               <p style="margin-top: 20px">
                 The 3.0.2 release fixes a number of rendering issues found in version 3.0.1 and provides
-                example code that <a target="_blank" href="../demos/legacy.html">emulates the look and feel of FoamTree
+                example code that <a target="_blank" href="../legacy.html">emulates the look and feel of FoamTree
                 2.0.x</a>.
               </p>
 
@@ -11472,7 +11472,7 @@ foamtree.set({
                   <dt>FoamTree 2.0.x emulation</dt>
                   <dd>
                     Version 3.0.2 adds a code example that
-                    <a target="_blank" href="../demos/legacy.html">emulates the look and feel of FoamTree 2.0.x</a>.
+                    <a target="_blank" href="../legacy.html">emulates the look and feel of FoamTree 2.0.x</a>.
                     Please note
                     that the example code requires FoamTree 3.0.2 or later to run (FOAMTREE-201).
                   </dd>
@@ -11678,7 +11678,7 @@ foamtree.set({
                   <p>
                     If you'd like to revert to the look and feel known from FoamTree 2.0.x,
                     you can do so by tweaking a number of options as
-                    <a target="_blank" href="../demos/legacy.html">this example code shows</a>.
+                    <a target="_blank" href="../legacy.html">this example code shows</a>.
                     The example is available in FoamTree 3.0.2 and later.
                   </p>
                 </div>
@@ -12206,15 +12206,15 @@ foamtree.set({
       </div>
     </div>
 
-    <script src="../demos/assets/js/jquery-2.0.3.min.js"></script>
-    <script src="../demos/assets/js/hammer.min.js"></script>
+    <script src="../assets/js/jquery-2.0.3.min.js"></script>
+    <script src="../assets/js/hammer.min.js"></script>
 
-    <script src="../demos/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../demos/assets/js/highlight.pack.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/highlight.pack.js"></script>
 
     <script src="../carrotsearch.foamtree.js"></script>
     <script src="../carrotsearch.foamtree.asserts.js"></script>
-    <script src="../demos/assets/js/carrotsearch.api.helpers.js"></script>
+    <script src="../assets/js/carrotsearch.api.helpers.js"></script>
 
     <!-- Preload some data sets with JSONP. -->
     <script>
@@ -12229,8 +12229,8 @@ foamtree.set({
         }
       }
     </script>
-    <script src="../demos/assets/data/data-mining-500-topic-hierarchical.js"></script>
-    <script src="../demos/assets/data/full-3-level.js"></script>
+    <script src="../assets/data/data-mining-500-topic-hierarchical.js"></script>
+    <script src="../assets/data/full-3-level.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-317750-2']);
