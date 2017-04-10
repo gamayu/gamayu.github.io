@@ -94,3 +94,7 @@ body {
 #visualization {
     top: 5px;
 }
+
+#details {
+    width: 100% !important;
+}
